@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .border-img1 {
+      border: 30px solid transparent;
+      border-image: url('./border-image.png') 30 30 round;
+    }
+
+    .border-img2 {
+      border: 22px dashed transparent;
+      background-image: url(./border-image.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-origin: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box border-img1"></div>
+  <div class="box border-img2"></div>
+  <div class="box">
+    <section>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+  </div>
+</body>
+
+</html>

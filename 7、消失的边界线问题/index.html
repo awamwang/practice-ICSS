@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .ul-container>ul {
+      width: 300px;
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #eee;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .ul-container>ul>li {
+      width: 100px;
+      box-sizing: border-box;
+      text-align: center;
+      margin: 5px 0;
+    }
+
+    .ul-container>.test1>li {
+      border-right: 1px solid black;
+    }
+
+    .ul-container>.test1>li:nth-child(3n) {
+      border-right: none;
+    }
+
+    .ul-container>.test1>li:last-child {
+      border-right: none;
+    }
+
+    .ul-container>.test2>li {
+      /* width: 99px;
+      box-sizing: content-box; */
+      border-left: 1px solid black;
+      margin-left: -1px;
+    }
+
+    .ul-container {
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="ul-container">
+    <ul class="test1">
+      <li>测试</li>
+      <li>消失</li>
+      <li>边界线</li>
+      <li>右侧</li>
+      <li>边界线</li>
+      <li>消失</li>
+      <li>测试</li>
+    </ul>
+  </div>
+  <div class="ul-container">
+    <ul class="test2">
+      <li>测试</li>
+      <li>消失</li>
+      <li>边界线</li>
+      <li>右侧</li>
+      <li>边界线</li>
+      <li>消失</li>
+      <li>测试</li>
+    </ul>
+  </div>
+</body>
+
+</html>

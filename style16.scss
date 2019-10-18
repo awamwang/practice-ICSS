@@ -1,0 +1,35 @@
+ul.first {
+  li:nth-child(1) {
+    font-family: serif;
+  }
+  li:nth-child(2) {
+    font-family: sans-serif;
+  }
+  li:nth-child(3) {
+    font-family: monospace;
+  }
+  li:nth-child(4) {
+    font-family: fantasy;
+  }
+  li:nth-child(5) {
+    font-family: cursive;
+  }
+}
+
+ul.second {
+  li:nth-child(1) {
+    font-family: SimSun;
+  }
+  li:nth-child(2) {
+    font-family: "Times New Roman";
+  }
+  li:nth-child(3) {
+    font-family: "Microsoft Yahei";
+  }
+  li:nth-child(4) {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  li:nth-child(5) {
+    font-family: Tahoma;
+  }
+}

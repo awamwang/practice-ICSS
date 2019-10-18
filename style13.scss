@@ -1,0 +1,19 @@
+:root {
+  --bgColor: #eee;
+
+  --word:"this";
+  --word-second:"is";
+  --word-third:"CSS Variable";
+}
+
+.var {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  background-color: var(--bgColor);
+  &::after {
+    content: var(--word)' 'var(--word-second)' 'var(--word-third);
+    position: absolute;
+    bottom: 20px;
+  }
+}

@@ -1,0 +1,35 @@
+.outer {
+  width: 200px;
+  height: 200px;
+  border: 2px dotted black;
+  transform: translateX(20px) translateY(20px);
+  display: flex;
+  align-items: flex-end;
+  .inner {
+    width: 160px;
+    height: 160px;
+    background: #eee;
+    border: 1px dashed black;
+    @extend .pos;
+  }
+}
+
+.pos {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.outer1 {
+  width: 200px;
+  height: 200px;
+  border: 2px dotted black;
+  opacity: 0.7;
+  .inner1 {
+    width: 160px;
+    height: 160px;
+    background: #eee;
+    border: 1px dashed black;
+    @extend .pos;
+  }
+}

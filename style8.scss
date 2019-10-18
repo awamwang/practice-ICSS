@@ -1,0 +1,48 @@
+#content1,
+#content2 {
+  display: none;
+}
+
+#content1:target,
+#content2:target {
+  display: block;
+}
+
+#content1:target ~ .nav li:first-child {
+  background: #ff7300;
+  color: #fff;
+}
+
+#content2:target ~ .nav li:last-child {
+  background: #ff7300;
+  color: #fff;
+}
+
+// 第二种方法
+// main > input {
+//   display: none;
+// }
+
+.nav1:checked ~ .nav-c li:first-child {
+  background: #ff7300;
+  color: #fff;
+}
+.nav2:checked ~ .nav-c li:last-child {
+  background: #ff7300;
+  color: #fff;
+}
+
+.nav1:checked ~ .content .content1 {
+  display: block;
+}
+
+.nav1:checked ~ .content .content2 {
+  display: none;
+}
+
+.nav2:checked ~ .content .content2 {
+  display: block;
+}
+.nav2:checked ~ .content .content1 {
+  display: none;
+}

@@ -1,0 +1,51 @@
+body { display: flex; }
+body section { width: 130px; border-right: 5px dotted darkorchid; }
+
+ul { list-style: none; width: 128px; padding-left: 0; }
+ul li { background: mediumorchid; border: 2px solid white; font-size: 30px; text-align: center; vertical-align: middle; }
+
+.test1 { display: flex; justify-content: space-between; overflow: hidden; }
+
+.g-queue { display: flex; flex-direction: column; flex-basis: 49%; }
+
+.g-item { position: relative; width: 100%; margin: 2.5% 0; }
+
+/* 2 */
+.test2 { display: flex; flex-wrap: wrap; align-items: flex-start; }
+.test2 li:nth-child(1) { width: 60px; height: 207px; }
+.test2 li:nth-child(2) { width: 60px; height: 201px; }
+.test2 li:nth-child(3) { width: 60px; height: 237px; }
+.test2 li:nth-child(4) { width: 60px; height: 265px; }
+.test2 li:nth-child(5) { width: 60px; height: 55px; }
+.test2 li:nth-child(6) { width: 60px; height: 223px; }
+.test2 li:nth-child(7) { width: 60px; height: 309px; }
+.test2 li:nth-child(8) { width: 60px; height: 247px; }
+.test2 li:nth-child(9) { width: 60px; height: 118px; }
+.test2 li:nth-child(10) { width: 60px; height: 186px; }
+
+.test3 { column-count: 2; column-gap: 1px; padding-top: 1px; }
+.test3 li:nth-child(1) { width: 60px; height: 102px; }
+.test3 li:nth-child(2) { width: 60px; height: 119px; }
+.test3 li:nth-child(3) { width: 60px; height: 220px; }
+.test3 li:nth-child(4) { width: 60px; height: 235px; }
+.test3 li:nth-child(5) { width: 60px; height: 160px; }
+.test3 li:nth-child(6) { width: 60px; height: 126px; }
+.test3 li:nth-child(7) { width: 60px; height: 151px; }
+.test3 li:nth-child(8) { width: 60px; height: 85px; }
+.test3 li:nth-child(9) { width: 60px; height: 329px; }
+.test3 li:nth-child(10) { width: 60px; height: 64px; }
+.test3 .item3 { width: 24%; margin-bottom: 1%; break-inside: avoid; }
+
+.test4 { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(auto-fill); grid-row-gap: 0; grid-auto-flow: column; }
+.test4 li:nth-child(1) { width: 60px; height: 81px; }
+.test4 li:nth-child(2) { width: 60px; height: 348px; }
+.test4 li:nth-child(3) { width: 60px; height: 306px; }
+.test4 li:nth-child(4) { width: 60px; height: 241px; }
+.test4 li:nth-child(5) { width: 60px; height: 53px; }
+.test4 li:nth-child(6) { width: 60px; height: 319px; }
+.test4 li:nth-child(7) { width: 60px; height: 98px; }
+.test4 li:nth-child(8) { width: 60px; height: 279px; }
+.test4 li:nth-child(9) { width: 60px; height: 273px; }
+.test4 li:nth-child(10) { width: 60px; height: 274px; }
+
+/*# sourceMappingURL=style23.css.map */

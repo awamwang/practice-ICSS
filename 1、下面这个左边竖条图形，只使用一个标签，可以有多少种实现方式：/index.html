@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .div {
+      width: 300px;
+      height: 120px;
+      background-color: #DDDDDD;
+      margin-bottom: 20px;
+    }
+    .div1 {
+      border-left: 4px solid deeppink;
+    }
+    .div2 {
+      /* background: linear-gradient(90deg, deeppink, deeppink 2%, #DDDDDD 2%, #DDDDDD 100%); */
+      background: linear-gradient(90deg, deeppink, deeppink 4px, #DDDDDD 4px, #DDDDDD 300px);
+    }
+    .div3 {
+      position: relative;
+    }
+    .div3::before {
+      content: "";
+      width: 4px;
+      height: 120px;
+      background-color: deeppink;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .div4 {
+      box-shadow: -4px 0 0 deeppink;
+    }
+    .div5 {
+      box-shadow: inset 4px 0 0 deeppink;
+    }
+    .div6 {
+      outline: 5px solid deeppink;
+      position: absolute;
+      top: -5px;
+      bottom: -5px;
+      right: -5px;
+      left: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div div1"></div>
+  <div class="div div2"></div>
+  <div class="div div3"></div>
+  <div class="div div4"></div>
+  <div class="div div5"></div>
+  <div><div class="div div6"></div></div>
+</body>
+
+</html>

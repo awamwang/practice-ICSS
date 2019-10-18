@@ -1,0 +1,14 @@
+section { display: flex; flex-direction: column; align-items: center; }
+
+.btn { width: 80px; height: 40px; border-radius: 4px; background: white; border: 1px solid rgba(255, 0, 0, 0.2); }
+
+.box { margin-top: 20px; width: 100px; height: 100px; background: mediumorchid; }
+
+.animation { animation: move 1s ease infinite alternate; }
+
+@keyframes move { 0% { transform: translateX(-100px); } }
+section:nth-child(2) input { display: none; }
+section:nth-child(2) #stop:checked ~ .animation { animation-play-state: paused; }
+section:nth-child(2) #play:checked ~ .animation { animation-play-state: running; }
+
+/*# sourceMappingURL=style22.css.map */

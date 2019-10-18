@@ -1,0 +1,4 @@
+.box { position: relative; background: #eee; top: 100px; }
+.box ul li { padding: 10px 0; line-height: 30px; background: #9d519d; margin-bottom: 10px; position: -webkit-sticky; position: sticky; top: 0; }
+
+/*# sourceMappingURL=style18.css.map */

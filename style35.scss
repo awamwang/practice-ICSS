@@ -1,0 +1,33 @@
+.container1 {
+  .swiper {
+    position: static;
+    animation: 10s move infinite;
+  }
+
+  .list {
+    position: relative;
+  }
+
+  @keyframes move {
+    100% {
+      transform: translate3d(10px, 0, 0);
+    }
+  }
+}
+.container2 {
+  .swiper {
+    position: relative;
+    z-index: 100;
+    animation: 10s move infinite;
+  }
+
+  .list {
+    position: relative;
+  }
+
+  @keyframes move {
+    100% {
+      transform: translate3d(10px, 0, 0);
+    }
+  }
+}

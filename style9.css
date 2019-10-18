@@ -1,0 +1,13 @@
+#container1 { width: 400px; display: flex; flex: 0 0 auto; margin-bottom: 20px; }
+#container1 .left { flex-basis: 200px; background-color: aqua; }
+#container1 .right { flex-basis: 200px; background-color: bisque; }
+
+#container2 { width: 400px; overflow: hidden; margin-bottom: 20px; }
+#container2 .left { float: left; width: 200px; background-color: aqua; padding-bottom: 5000px; margin-bottom: -5000px; }
+#container2 .right { float: left; width: 200px; background-color: bisque; padding-bottom: 5000px; margin-bottom: -5000px; }
+
+#container3 { width: 400px; overflow: hidden; background-image: linear-gradient(90deg, aqua 50%, bisque 0); margin-bottom: 20px; }
+#container3 .left { width: 200px; float: left; background-color: transparent; }
+#container3 .right { width: 200px; float: left; background-color: transparent; }
+
+/*# sourceMappingURL=style9.css.map */

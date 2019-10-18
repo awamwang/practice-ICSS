@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../style22.css">
+</head>
+
+<body>
+  <section>
+    利用js
+    <div class="btn jsbtn">播放/暂停</div>
+    <div class="box animation"></div>
+  </section>
+
+  <section>
+    纯css
+    <input id="stop" type="radio" />
+    <input id="play" type="radio" />
+
+    <div>
+      <label for="stop">
+        <div class="btn">stop</div>
+      </label>
+      <label for="play">
+        <div class="btn">play</div>
+      </label>
+    </div>
+
+    <div class="box animation"></div>
+  </section>
+
+  <script>
+    document.querySelector('.jsbtn').addEventListener('click', function() {
+      let btn = document.querySelector('.btn');
+      let elem = document.querySelector('.animation');
+      let state = elem.style['animationPlayState'];
+
+      if (state === 'paused') {
+        elem.style['animationPlayState'] = 'running';
+        btn.innerText = 'stop';
+      } else {
+        elem.style['animationPlayState'] = 'paused';
+        btn.innerText = 'play';
+      }
+
+    });
+  </script>
+</body>
+
+</html>

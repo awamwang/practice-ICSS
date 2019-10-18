@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .box {
+      margin-bottom: 20px;
+    }
+
+    .ori {
+      width: 100px;
+      height: 100px;
+      background: url('./img.jpg') no-repeat center / cover;
+    }
+
+    .ivt {
+      width: 100px;
+      height: 100px;
+      background: url('./img.jpg') no-repeat center / cover;
+      transform: rotateX(180deg);
+    }
+
+    .ori1 {
+      width: 100px;
+      height: 100px;
+      background: url('./img.jpg') no-repeat center / cover;
+      -webkit-box-reflect: below;
+    }
+
+    .ori2 {
+      position: relative;
+      margin-top: 120px;
+      width: 100px;
+      height: 100px;
+      background: url('./img.jpg') no-repeat center / cover;
+    }
+
+    .ori2::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      width: inherit;
+      height: inherit;
+      /* bottom: -100%;
+      left: 0;
+      right: 0; */
+      background: inherit;
+      transform: rotateX(180deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="ori"></div>
+    <div class="ivt"></div>
+  </div>
+  <div class="box">
+    <div class="ori1"></div>
+    <!-- <div class="ivt1"></div> -->
+  </div>
+  <div class="box">
+    <div class="ori2"></div>
+    <!-- <div class="ivt1"></div> -->
+  </div>
+</body>
+
+</html>

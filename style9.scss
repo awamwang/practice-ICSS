@@ -1,0 +1,51 @@
+#container1 {
+  width: 400px;
+  display: flex;
+  flex: 0 0 auto;
+  .left {
+    flex-basis: 200px;
+    background-color: aqua;
+  }
+  .right {
+    flex-basis: 200px;
+    background-color: bisque;
+  }
+  margin-bottom: 20px;
+}
+
+#container2 {
+  width: 400px;
+  overflow: hidden;
+  .left {
+    float: left;
+    width: 200px;
+    background-color: aqua;
+    padding-bottom:5000px;
+    margin-bottom:-5000px;
+  }
+  .right {
+    float: left;
+    width: 200px;
+    background-color: bisque;
+    padding-bottom:5000px;
+    margin-bottom:-5000px;
+  }
+  margin-bottom: 20px;
+}
+
+#container3 {
+  width: 400px;
+  overflow: hidden;
+  background-image: linear-gradient(90deg, aqua 50%, bisque 0);
+  .left {
+    width: 200px;
+    float: left;
+    background-color: transparent;
+  }
+  .right {
+    width: 200px;
+    float: left;
+    background-color: transparent;
+  }
+  margin-bottom: 20px;
+}

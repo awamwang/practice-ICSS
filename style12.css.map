@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,KAAM,GACJ,SAAS,EAAE,IAAI;;AAGjB,KAAM,GACJ,SAAS,EAAE,IAAI;;AAIf,UAAI,GACF,MAAM,EAAE,IAAI,EACZ,UAAU,EAAE,OAAO;AAErB,gBAAU,GACR,OAAO,EAAE,IAAI",
+"sources": ["style12.scss"],
+"names": [],
+"file": "style12.css"
+}

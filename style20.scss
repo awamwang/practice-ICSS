@@ -1,0 +1,43 @@
+.box {
+  width: 100px;
+  height: 30px;
+  background: linear-gradient(to right, #ffc700 0%, #e91e1e 100%);
+  animation: gradientChange 2s linear infinite;
+  margin-bottom: 10px;
+}
+@keyframes gradientChange {
+  100% {
+    background: linear-gradient(to right, #e91e1e 0%, #6f27b0 100%);
+  }
+}
+
+.box1 {
+  width: 100px;
+  height: 30px;
+  background: #ffc700;
+  animation: colorChange 3s infinite alternate;
+  margin-bottom: 10px;
+}
+@keyframes colorChange {
+  100% {
+    background: #e91e1e;
+  }
+}
+
+.box2 {
+  width: 100px;
+  height: 30px;
+  background: linear-gradient(90deg,  #ffc700 0%, #e91e1e 50%, #6f27b0 100%);
+  background-size: 200% 100%;
+  background-position: 0 0;
+  animation: bgposition 2s infinite linear alternate;
+}
+
+@keyframes bgposition {
+  0% {
+      background-position: 0 0;
+  }
+  100% {
+      background-position: 100% 0;
+  }
+}

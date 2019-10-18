@@ -1,0 +1,17 @@
+:root {
+  font-size: 10px;
+}
+
+.some {
+  font-size: 2rem;
+}
+
+.empty {
+  div {
+    height: 20px;
+    background: #ffcc00;
+  }
+  div:empty {
+    display: none;
+  }
+}
